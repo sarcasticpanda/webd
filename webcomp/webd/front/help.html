@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Hands - Help</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="index.html" class="logo">Healing Hands</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="find-doctors.html">Find Doctors</a>
+            <a href="about.html">About</a>
+            <a href="help.html">Help</a>
+            <a href="#login" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <!-- Help Section -->
+    <section class="help">
+        <h2>Help & Support</h2>
+        <h3>Frequently Asked Questions (FAQs)</h3>
+        <div class="faq-item">
+            <h4 class="faq-question">How do I cancel an appointment?</h4>
+            <div class="faq-answer">
+                <p>Go to your account dashboard, find your upcoming appointments, and click "Cancel." You’ll receive a confirmation email once the cancellation is processed.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-question">Are the doctors verified?</h4>
+            <div class="faq-answer">
+                <p>Yes, all doctors on Healing Hands are verified and licensed professionals with years of experience in their respective fields.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h4 class="faq-question">How can I reset my password?</h4>
+            <div class="faq-answer">
+                <p>Click on "Forgot Password" on the login page, enter your email, and follow the instructions to reset your password securely.</p>
+            </div>
+        </div>
+
+        <h3>Contact Support</h3>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Live Chat Button -->
+    <button class="chat-btn">💬 Live Chat</button>
+
+    <!-- Chatbot Modal -->
+    <div id="chat-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Live Chat Support</h2>
+            <div id="chat-messages">
+                <p><strong>Bot:</strong> Hello! How can I assist you today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Healing Hands</h3>
+                <p>Connecting you with trusted healthcare professionals.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-doctors.html">Find Doctors</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@healinghands.com</p>
+                <p>Phone: +91-1234567890</p>
+                <p>Address: 123 Health Street, Mumbai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Stay updated with the latest health tips:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Healing Hands. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="help.js"></script>
+</body>
+</html>

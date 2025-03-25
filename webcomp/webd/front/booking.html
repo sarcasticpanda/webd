@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Hands - Book Appointment</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="index.html" class="logo">Healing Hands</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="find-doctors.html">Find Doctors</a>
+            <a href="about.html">About</a>
+            <a href="help.html">Help</a>
+            <a href="#login" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <h2>Book an Appointment</h2>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="doctor">Doctor</label>
+                <input type="text" id="doctor" readonly>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Time</label>
+                <select id="time" required>
+                    <option value="">Select Time</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="patient-name">Your Name</label>
+                <input type="text" id="patient-name" required>
+            </div>
+            <div class="form-group">
+                <label for="patient-email">Your Email</label>
+                <input type="email" id="patient-email" required>
+            </div>
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Appointment Confirmed</h2>
+            <p id="confirmation-details"></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Healing Hands</h3>
+                <p>Connecting you with trusted healthcare professionals.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-doctors.html">Find Doctors</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@healinghands.com</p>
+                <p>Phone: +91-1234567890</p>
+                <p>Address: 123 Health Street, Mumbai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Stay updated with the latest health tips:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Healing Hands. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>

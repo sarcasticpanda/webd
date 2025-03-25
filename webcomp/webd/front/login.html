@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healing Hands - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="index.html" class="logo">Healing Hands</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="find-doctors.html">Find Doctors</a>
+            <a href="about.html">About</a>
+            <a href="help.html">Help</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <h2>Login to Your Account</h2>
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="auth-btn">Login</button>
+                <div class="form-link">
+                    <p>Don't have an account? <a href="#signup" id="show-signup">Sign Up</a></p>
+                    <p><a href="#forgot-password" id="forgot-password">Forgot Password?</a></p>
+                </div>
+            </form>
+            <form id="signup-form" class="auth-form" style="display: none;">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button type="submit" class="auth-btn">Sign Up</button>
+                <div class="form-link">
+                    <p>Already have an account? <a href="#login" id="show-login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgot-password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Reset Password</h2>
+            <form id="forgot-password-form">
+                <div class="form-group">
+                    <label for="reset-email">Enter your email</label>
+                    <input type="email" id="reset-email" required>
+                </div>
+                <button type="submit" class="auth-btn">Send Reset Link</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Healing Hands</h3>
+                <p>Connecting you with trusted healthcare professionals.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-doctors.html">Find Doctors</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@healinghands.com</p>
+                <p>Phone: +91-1234567890</p>
+                <p>Address: 123 Health Street, Mumbai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Stay updated with the latest health tips:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Healing Hands. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
